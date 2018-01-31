@@ -3,10 +3,10 @@
 const Controller = require('egg').Controller;
 
 class BoardController extends Controller {
-  async build() {
-    const board=this.ctx.service.board.get();
+  async get() {
+    const board = this.ctx.service.board.get();
     this.ctx.body = board;
-    this.ctx.status=200;
+    this.ctx.status = 200;
   }
 }
 

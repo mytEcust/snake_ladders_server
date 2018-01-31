@@ -5,5 +5,6 @@
  */
 module.exports = app => {
   const { router, controller } = app;
-  router.get('/buildboard', controller.board.build);
+  router.get('/board', controller.board.get);
+  router.get('/dice', controller.dice.get);
 };
